@@ -12,13 +12,13 @@ class Triangle
   class TriangleError < StandardError
   
     def kind 
-      if length_a != length_b || length_c
+      if (length_a != length_b) && (length_a != length_c) && (length_b != length_c)
         :scalene
       elsif
-        length_a == length_b && length_b != length_c
-        :isosceles
-      else
+        length_a == length_b && length_a == length_c
         :equilateral
+      else
+        :isosceles
       end
     end   
   end
