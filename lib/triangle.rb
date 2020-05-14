@@ -9,16 +9,18 @@ class Triangle
     @length_c = length_c
   end
   
-  def kind 
-    if length_a != length_b || length_c
-      scalene
-    elsif
-      length_a == length_b && length_b != length_c
-      isosceles
-    else
-      equilateral
-    end
-  end   
+  class TriangleError < StandardError
   
+    def kind 
+      if length_a != length_b || length_c
+        scalene
+      elsif
+        length_a == length_b && length_b != length_c
+        isosceles
+      else
+        equilateral
+      end
+    end   
+  end
   
 end
