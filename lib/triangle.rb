@@ -22,7 +22,7 @@ class Triangle
           (@length_a == @length_b) && (@length_b == @length_c)
           :equilateral
       elsif
-          (@length_a != @length_b) && (@length_b == @length_c) && (@length_a != @length_c)
+          (@length_a != @length_b) && (@length_b != @length_c) && (@length_a != @length_c)
           :scalene
       end
       end   
