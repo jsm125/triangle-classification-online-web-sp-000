@@ -11,7 +11,7 @@ class Triangle
   
   class TriangleError < StandardError
   
-    def kind 
+    def kind(length_a,length_b,length_c)
       if (length_a != length_b) && (length_a != length_c) && (length_b != length_c)
         :scalene
       elsif
