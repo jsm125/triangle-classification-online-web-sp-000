@@ -1,4 +1,4 @@
-require_relative '../lib/triangle'lib/triangle.rb 
+require_relative '../lib/triangle'
 
 class Triangle
   attr_accessor :length_a, :length_b, :length_c
