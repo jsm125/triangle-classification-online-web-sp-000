@@ -9,7 +9,10 @@ class Triangle
     @length_c = length_c
   end
   
-  class TriangleError < StandardError
+  
+end
+
+class TriangleError < StandardError
   
     def kind
       if (@length_a <= 0) || (@length_b <= 0) || (@length_c <= 0)
@@ -27,8 +30,7 @@ class Triangle
           (@length_a != @length_b) && (@length_b == @length_c) && (@length_a != @length_c)
           :scalene
       end
-    end   
-  end
+      end   
+    end
   
-end
-end
+  end
