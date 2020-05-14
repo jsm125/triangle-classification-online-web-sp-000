@@ -9,10 +9,7 @@ class Triangle
     @length_c = length_c
   end
   
-  
-end
-
-class TriangleError < StandardError
+  class TriangleError < StandardError
   
     def kind
       if (@length_a <= 0) || (@length_b <= 0) || (@length_c <= 0)
@@ -34,3 +31,4 @@ class TriangleError < StandardError
     end
   
   end
+end
