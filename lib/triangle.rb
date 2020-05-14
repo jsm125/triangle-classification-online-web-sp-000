@@ -18,7 +18,7 @@ class Triangle
     else
       equilateral
     end
-      
+  end   
   
   
 end
