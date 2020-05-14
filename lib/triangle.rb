@@ -16,15 +16,11 @@ class Triangle
         (@length_a + @length_b <= @length_c) || (@length_a + @length_c <= @length_b) || (@length_b + @length_c <= @length_a)
         raise TriangleError
       else
-
-      elsif
-          (@length_a == @length_b) && (@length_b == @length_c)
+       if (@length_a == @length_b) && (@length_b == @length_c)
           :equilateral
-      elsif
-          (@length_a != @length_b) && (@length_b != @length_c) && (@length_a != @length_c)
+    elsif (@length_a != @length_b) && (@length_b != @length_c) && (@length_a != @length_c)
           :scalene
-           if (@length_a == @length_b) || (@length_b == @length_c) || (@length_a == @length_c)
-  :isosceles
+      else :isosceles
       end
       end   
     end
