@@ -13,7 +13,7 @@ class Triangle
     if length_a != length_b || length_c
       scalene
     elsif
-    if length_a == length_b && length_b != length_c
+      length_a == length_b && length_b != length_c
       isosceles
     else
       equilateral
