@@ -11,8 +11,10 @@ class Triangle
   
   class TriangleError < StandardError
   
-    def kind(length_a,length_b,length_c)
-      if (length_a != length_b) && (length_a != length_c) && (length_b != length_c)
+    def kind()
+      if @length_a <= 0 || @length_b <= 0, || @length_c <= 0
+        raise TriangleError
+        (length_a != length_b) && (length_a != length_c) && (length_b != length_c)
         :scalene
       elsif
         length_a == length_b && length_a == length_c
