@@ -11,7 +11,7 @@ class Triangle
   
   class TriangleError < StandardError
   
-    def kind(length_a,length_b,length_c)
+    def kind
       if (@length_a <= 0) || (@length_b <= 0) || (@length_c <= 0)
         raise TriangleError
       elsif 
