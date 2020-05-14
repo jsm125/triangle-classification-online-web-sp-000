@@ -13,12 +13,12 @@ class Triangle
   
     def kind 
       if length_a != length_b || length_c
-        scalene
+        :scalene
       elsif
         length_a == length_b && length_b != length_c
-        isosceles
+        :isosceles
       else
-        equilateral
+        :equilateral
       end
     end   
   end
